@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <h1>Tamagotchi Game</h1>
+        <div id="create-pet">
+            <div class="form-group">
+                <label for="animal-type">1. Choose your pet type:</label>
+                <select id="animal-type">
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
+                    <option value="rabbit">Rabbit</option>
+                    <option value="chicken">Chicken</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="name-input">2. Choose your pet name:</label>
+                <input type="text" id="name-input" placeholder="Enter pet name">
+            </div>
+
+            <div class="form-group checkbox-group">
+                <label>3. Or use a random name
+                    <input type="checkbox" id="random-name">
+                </label>
+            </div>
+
+            <div class="form-group">
+                <button id="create-pet-btn">Create New Pet</button>
+                <p class="info-text">
+                    You can create up to 4 pets. Each pet lives independently.
+                </p>
+            </div>
+
+        </div>
+        <button id="restart-btn">Restart Game</button>
+        <div id="pet-container"></div>
+        <div id="history"></div>
+
+    </div>
+</body>
+
+</html>

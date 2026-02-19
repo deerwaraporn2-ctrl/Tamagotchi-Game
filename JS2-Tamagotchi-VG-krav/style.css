@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffd6ec, #44bee6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+h1 {
+  margin: 20px 0 5px 0;
+  font-size: 2.5rem;
+  color: #5a4fcf;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.info-text {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+
+  gap: 15px;
+  padding: 12px;
+  background-color: cornflowerblue;
+  border: 10px solid darkblue;
+}
+#history {
+  max-height: auto;
+  overflow-y: auto;
+  background-color: white;
+  border: 2px solid darkblue;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+#create-pet {
+  width: 350px;
+  padding: 25px;
+  margin: 0 0 20px 0;
+  background: #fff0f6;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #6a5acd;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 12px;
+  border: 2px solid #d6c6ff;
+  background-color: #ffffff;
+  font-size: 14px;
+}
+
+
+button {
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  background-color: #ff9ecb;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7ab8;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #ffb3b3;
+  color: darkred;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.activity-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.activity-buttons button {
+  width: 80px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 5px 0 rgba(0,0,0,0.2);
+}.nap-btn {
+  background-color: #cdb4ff;   
+}
+.play-btn {
+  background-color: #a0e7e5;   
+}
+
+.eat-btn {
+  background-color: #ffafcc;  
+}
+.activity-buttons button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+}
+.activity-buttons button:disabled {
+  background-color: #ddd;
+  box-shadow: none;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pet-images {
+  margin: 15px 0;
+  text-align: center;
+} 
+.mood { 
+  text-align: center; 
+  background-color: #d6c6ff;
+}
